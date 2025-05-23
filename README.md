@@ -1,4 +1,4 @@
-## AdvProg Tutorial 8
+## AdvProg Tutorial 10 Timer
 Agus Tini Sridewi / 2306276004 / ADPRO A
 
 ### 1.2 Understanding how it works
