@@ -79,6 +79,7 @@ fn main() {
         println!("Dewi's Komputer: done!");
     });
 
+    println!("Dewi's Komputer: hey hey");
     drop(spawner);
     executor.run();
 }
