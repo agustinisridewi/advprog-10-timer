@@ -79,7 +79,19 @@ fn main() {
         println!("Dewi's Komputer: done!");
     });
 
+    spawner.spawn(async {
+        println!("Dewi's Komputer: howdy2!");
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("Dewi's Komputer: done2!");
+    });
+    spawner.spawn(async {
+        println!("Dewi's Komputer: howdy3!");
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("Dewi's Komputer: done3!");
+    });
+
     println!("Dewi's Komputer: hey hey");
-    drop(spawner);
+    // drop(spawner);
+
     executor.run();
 }
